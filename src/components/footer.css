@@ -1,0 +1,33 @@
+.footer {
+    position: relative;
+    padding-top: 2.4rem;
+    padding-left: 4rem;
+    padding-bottom: 2.4rem;
+    padding-right: 4rem;
+}
+
+.sb_footer-below-links {
+    position: relative;
+    display: flex;
+    margin-bottom: 4rem;
+}
+
+.sb_footer-below-links .ul-item {
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+
+.sb_footer-below-links .ul-item a {
+    padding-right: 1.5rem;
+    text-decoration: none;
+    color: currentColor
+}
+
+.sb_footer-below-links .ul-item a:hover {
+    text-decoration: underline;
+}
+
+.sb_footer-copyright p {
+    color: rgba(0, 0, 0, 0.518);
+}

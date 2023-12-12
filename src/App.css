@@ -48,9 +48,14 @@ header ul li {
 header ul li a {
   display: inline-block;
   color: #333;
-  font-weight: 400;
+  font-weight: 700;
+  text-transform: uppercase;
   margin-left: 40px;
   text-decoration: none;
+}
+
+header ul li a:hover {
+  color: #00754a
 }
 
 .content {
@@ -87,13 +92,21 @@ header ul li a {
   display: inline-block;
   margin-top: 20px;
   padding: 8px 20px;
-  background: #017143;
+  background-color: #017143;
   color: #fff;
-  border-radius: 40px;
-  font-weight: 500;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px;
+  font-weight: 600;
   letter-spacing: 1px;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
+
+.content .textBox a:hover {
+  background-color: #005330;
+}
+
 
 .content .imgBox {
   width: 600px;
@@ -120,11 +133,6 @@ header ul li a {
   display: inline-block;
   margin: 0 20px;
   cursor: pointer;
-  transition: 0.5s;
-}
-
-.thumb li:hover {
-  transform: translateY(-15px);
 }
 
 .thumb li img {
@@ -151,6 +159,10 @@ header ul li a {
   margin: 5px 0;
   transform: scale(0.6);
   filter: invert(1);
+}
+
+.sci li:hover {
+  color: black;
 }
 
 .circle {
@@ -186,6 +198,35 @@ header ul li a {
       background-position: center;
       background-repeat: no-repeat;
       filter: invert(1);
+      z-index: 11;
+    }
+
+    .toggle.active {
+      position: fixed;
+      right: 20px;
+      background: url(./assets/close.png);
+      background-size: 25px;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    header ul.navigation.active {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: #fff;
+      z-index: 10;
+    }
+
+    header ul li a {
+      font-size: 1.5em;
+      margin: 5px 0;
     }
 
     section {
