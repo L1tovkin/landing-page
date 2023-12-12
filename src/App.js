@@ -14,7 +14,7 @@ const App = () => {
       <section>
         <div className='circle'></div>
         <header>
-        <a href='#'><img src={logo} alt='logo'></img></a>
+        <a href='#'><img className='logo' src={logo} alt='logo'></img></a>
         <div className='toggle'></div>
         <ul>
           <li><a href='#'>Home</a></li>
